@@ -6,7 +6,8 @@ main{
 /*Navegation Bar*/
 
 .navbar-brand img{
-  width: 3.125rem;
+  width: 55px;
+  max-height: 55px;
   border-radius: 50%;
 }
 
