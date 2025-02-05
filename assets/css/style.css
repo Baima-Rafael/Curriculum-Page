@@ -40,3 +40,12 @@ main{
 section{
   scroll-margin-top: 4rem;
 }
+ /* MarginTop */
+
+.MyMarginTop{
+  margin-top: 8rem
+}
+
+.MyMarginTop2{
+  margin-top: 2rem;
+}
