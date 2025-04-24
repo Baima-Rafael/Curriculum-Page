@@ -88,42 +88,61 @@ section {
 
 .projects {
   text-align: center;
-  position: relative; /* Permite que os filhos com position: absolute sejam posicionados em relação a essa div */
+  position: relative;
+  margin-bottom: 2rem; 
 }
 
 .projects #projects {
-  display: inline-block; /* Faz a div se ajustar ao tamanho da imagem */
+  display: inline-block;
 }
 
 .projects img {
   display: block;
   margin: 0 auto;
-  border: 1px solid black;
+  border: 2px solid #333;
   width: 67%;
-  height: auto; /* Mantém a proporção natural da imagem */
+  height: auto; 
 }
 
 .projects a {
-  display: inline-block; /* Restringe a área clicável do link à imagem */
-  line-height: 0; /* Remove espaço extra */
+  display: inline-block; 
+  line-height: 0; 
 }
 
 .projects #TitleOfProject {
-  position: absolute; /* Posiciona o título sobre a imagem */
-  top: 85%; /* Ajusta a posição vertical */
+  position: absolute; 
+  top: 70%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Centraliza o texto */
+  transform: translate(-50%, -50%);
   font-size: 40px;
   color: white;
-  margin: 0; /* Remove margens para controle preciso */
+  margin: 0; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
 
 .projects #DescriptionOfProject {
-  position: absolute; /* Posiciona a descrição sobre a imagem */
-  top: 93%; /* Ajusta a posição vertical */
+  position: absolute;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 20px;
   color: white;
   margin: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+}
+
+@media (max-width: 768px) {
+  .projects #TitleOfProject {
+    font-size: 24px;
+    top: 65%;
+  }
+
+  .projects #DescriptionOfProject {
+    font-size: 16px;
+    top: 75%;
+  }
+
+  .projects img {
+    width: 90%;
+  }
 }
