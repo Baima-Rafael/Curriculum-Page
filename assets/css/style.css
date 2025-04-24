@@ -1,6 +1,6 @@
 
 main{
-  margin-top: 4.7rem;
+  margin-top: 5.5rem;
 }
 
 /*Navegation Bar*/
@@ -13,7 +13,7 @@ main{
 
 /* carrosel*/
 
-.carousel-item{
+/* .carousel-item{
   height: 31.25rem;
 }
 
@@ -35,17 +35,95 @@ main{
 
 .carousel-item{
   color: white;
-}
+} */
 
 section{
   scroll-margin-top: 4rem;
 }
- /* MarginTop */
 
-.MyMarginTop{
-  margin-top: 8rem
+
+/* .projects{
+  position: relative;
+  top: 130px;
+  text-align: center;
 }
 
-.MyMarginTop2{
-  margin-top: 2rem;
+.projects img {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 67%;
+  height: 30%;
+}
+
+.projects a{
+  width: 50px;
+  height: auto;
+}
+
+.projects #TitleOfProject{
+  position: relative;
+  top: -160px;
+  font-size: 40px;
+  color: white;
+}
+
+.projects #DescriptionOfProject{
+  position: relative;
+  top: -150px;
+  font-size: 20px;
+  color: white;
+} */
+
+/* Navegation Bar */
+.navbar-brand img {
+  width: 55px;
+  max-height: 55px;
+  border-radius: 50%;
+}
+
+section {
+  scroll-margin-top: 4rem;
+}
+
+.projects {
+  text-align: center;
+  position: relative; /* Permite que os filhos com position: absolute sejam posicionados em relação a essa div */
+}
+
+.projects #projects {
+  display: inline-block; /* Faz a div se ajustar ao tamanho da imagem */
+}
+
+.projects img {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 67%;
+  height: auto; /* Mantém a proporção natural da imagem */
+}
+
+.projects a {
+  display: inline-block; /* Restringe a área clicável do link à imagem */
+  line-height: 0; /* Remove espaço extra */
+}
+
+.projects #TitleOfProject {
+  position: absolute; /* Posiciona o título sobre a imagem */
+  top: 85%; /* Ajusta a posição vertical */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza o texto */
+  font-size: 40px;
+  color: white;
+  margin: 0; /* Remove margens para controle preciso */
+}
+
+.projects #DescriptionOfProject {
+  position: absolute; /* Posiciona a descrição sobre a imagem */
+  top: 93%; /* Ajusta a posição vertical */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: white;
+  margin: 0;
 }
